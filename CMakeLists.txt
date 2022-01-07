@@ -33,13 +33,13 @@ install(TARGETS ${PROJECT_NAME} DESTINATION lib/${PROJECT_NAME})
 # Install library headers
 install(FILES ${HEADERS} DESTINATION include/${PROJECT_NAME})
 
-IF (BUILD_TESTS)
-    add_subdirectory(tests)
-ENDIF()
+#IF (BUILD_TESTS)
+#    add_subdirectory(tests)
+#ENDIF()
 
-IF (BUILD_SIMPLE_EX OR BUILD_FULL_EX)
-    add_subdirectory(examples)
-ENDIF()
+##IF (BUILD_SIMPLE_EX OR BUILD_FULL_EX)
+#    add_subdirectory(examples)
+#ENDIF()
 
 
-add_executable(main main.cpp)
+#add_executable(main main.cpp)
