@@ -2549,7 +2549,7 @@ c     Determine the maximum step length.
          if (gd .ge. zero) then
 c                               the directional derivative >=0.
 c                               Line search is impossible.
-            write(6,*)' ascent direction in projection gd = ', gd
+c           write(6,*)' ascent direction in projection gd = ', gd
             info = -4
             return
          endif
@@ -3278,8 +3278,8 @@ c
  55   continue
       if ( dd_p .gt.zero ) then
          call dcopy( n, xp, 1, x, 1 )
-         write(6,*) ' Positive dir derivative in projection '
-         write(6,*) ' Using the backtracking step '
+c        write(6,*) ' Positive dir derivative in projection '
+c        write(6,*) ' Using the backtracking step '
       else
          go to 911
       endif
